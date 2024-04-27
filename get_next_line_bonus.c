@@ -105,7 +105,7 @@ char	*ft_read(char *save, int fd)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	*save[OPEN_MAX];
+	static char	*save[1024];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
